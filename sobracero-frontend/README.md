@@ -116,7 +116,7 @@ La app está dividida **por dominio funcional (rol del usuario)**. Cada parte vi
 | **Shared** | `PageHeader`, `EstadoBadge`, `EmptyState`, `Spinner`, `Toasts`, `MapaSelector`, pipes `soles`, `kg`, `fechaExacta`; utilidades de fechas, CSV y geolocalización |
 | **Rol de equipo** | Revisa los PR que tocan `core/`, `shared/` o `package.json` y mantiene `MENU_POR_ROL` |
 
-### Parte 2 — Landing e impacto público · **Desarrollador 2** ⏳ *(pendiente: el desarrollador pega su paquete)*
+### Parte 2 — Landing e impacto público · **Desarrollador 2** ✅ *(ya implementada)*
 
 | | |
 |---|---|
@@ -127,7 +127,7 @@ La app está dividida **por dominio funcional (rol del usuario)**. Cada parte vi
 | **Textos** | Todos en `landing/data/contenido-landing.ts`, tomados del informe TB1 (editar ahí, no en los componentes) |
 | **Servicios** | `ImpactoApiService.plataforma()` (público) · opcional `OfertasApiService.cercanas()` para mostrar ofertas de ejemplo |
 
-### Parte 3 — Consumidor · **Desarrollador 3** ⏳ *(pendiente: el desarrollador pega su paquete)*
+### Parte 3 — Consumidor · **Desarrollador 3** ✅ *(ya implementada)*
 
 | | |
 |---|---|
@@ -138,7 +138,7 @@ La app está dividida **por dominio funcional (rol del usuario)**. Cada parte vi
 | **Servicios** | `OfertasApiService.cercanas()`, `.detalle()` · `ReservasApiService.reservar()`, `.mias()` |
 | **Tip** | `:id` llega como `input()` gracias a `withComponentInputBinding()` → `id = input.required<string>()` |
 
-### Parte 4 — Comercio · **Desarrollador 4** ⏳ *(pendiente: el desarrollador pega su paquete)*
+### Parte 4 — Comercio · **Desarrollador 4** ✅ *(ya implementada)*
 
 | | |
 |---|---|
@@ -149,7 +149,7 @@ La app está dividida **por dominio funcional (rol del usuario)**. Cada parte vi
 | **Servicios** | `OfertasApiService.crear()`, `.mias()` · `ReservasApiService.canjear()` · `DonacionesApiService.deComercio()` · `ComerciosApiService.yo()` |
 | **Tip** | Para fechas usa `desdeInputDatetime()` y `aFechaISO()` de `core/utils/fechas.ts` (el backend espera hora de Lima sin zona) |
 
-### Parte 5 — Organización social · **Desarrollador 5** ⏳ *(pendiente: el desarrollador pega su paquete)*
+### Parte 5 — Organización social · **Desarrollador 5** ✅ *(ya implementada)*
 
 | | |
 |---|---|
@@ -160,7 +160,7 @@ La app está dividida **por dominio funcional (rol del usuario)**. Cada parte vi
 | **Servicios** | `DonacionesApiService.mias()`, `.aceptar()`, `.rechazar()`, `.completar()`, `.registro()` · `OrganizacionesApiService.yo()`, `.actualizarCapacidad()` · `ImpactoApiService.organizacion()` |
 | **Tip** | `descargarCsv(filas, 'registro-donaciones.csv')` de `core/utils/archivos.ts` |
 
-### Parte 6 — Administración e impacto · **Desarrollador 6** ⏳ *(pendiente: el desarrollador pega su paquete)*
+### Parte 6 — Administración e impacto · **Desarrollador 6** ✅ *(ya implementada)*
 
 | | |
 |---|---|
